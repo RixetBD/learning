@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
 a {
     text-decoration: none;
 }
 
-body{
+body {
     font-family: 'Work Sans', sans-serif;
+}
+
+.navbar .nav-link {
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 20px;
 }
 
 .bg-green {
@@ -22,72 +29,76 @@ body{
 }
 
 
-.header-area{
+.header-area {
     height: 90vh;
     background-size: cover;
 }
-.header-area-text{
+
+.header-area-text {
     height: 90vh;
     padding-top: 35vh !important;
 }
 
-.header-area-text h1{
+
+.header-area-text h1 {
     font-size: 35px;
     font-weight: 600;
     color: #43cb83;
 }
 
-.header-area-text p{
+.header-area-text p {
     font-size: 15px;
     color: #5a6e79;
 }
 
-.header-area-text .btn{
+.header-area-text .btn {
     border-radius: 25px;
     color: #ffffff;
 }
 
-.header-area-text .btn:hover{
+.header-area-text .btn:hover {
     border-radius: 25px;
     color: #ffffff;
     background-color: #252c3a;
 }
 
 /* Box Style */
-.box1{
+.box1 {
     padding: 20px;
     margin: 5px;
     height: 250px;
     background-color: #f1e3fc;
 }
 
-.box1 img{
+.box1 img {
     padding-top: 50px;
     padding-bottom: 20px;
 }
-.box2{
+
+.box2 {
     padding: 20px;
     margin: 5px;
     height: 250px;
     background-color: #e3fcfa;
 }
 
-.box2 img{
+.box2 img {
     padding-top: 50px;
     padding-bottom: 20px;
 }
 
-.box1:hover, .box2:hover{
+.box1:hover,
+.box2:hover {
     background-color: #fcf0e3;
 }
 
-.abcount{
+.abcount {
     font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
 }
 
-.myform input{
+.myform input {
     font-size: 14px;
     border-radius: 0px;
     border-top: none;
@@ -95,18 +106,19 @@ body{
     border-left: none;
     border-bottom: 1px solid #b8b8b8;
 }
-.myform button{
+
+.myform button {
     border-radius: 25px;
     color: #ffffff;
 }
 
-.myform button:hover{
+.myform button:hover {
     border-radius: 30px;
     color: #ffffff;
     background-color: #E74C3C;
 }
 
-.myform p a{
+.myform p a {
     color: #87959c;
     padding-top: 15px;
     font-size: 12px;
@@ -272,4 +284,101 @@ button {
 .clam-footer li a:hover {
     color: #43cb83;
 
+}
+
+
+/* About Page */
+@media only screen and (max-width: 600px) {
+    .my-team h2 {
+        font-size: 30px;
+        font-weight: 600px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .my-team h4 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .my-team p {
+        font-size: 14px;
+    }
+
+    .mem1 {
+        padding: 10px;
+    }
+
+    .mem1 a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .header-area {
+        height: 45vh;
+        background-size: cover;
+    }
+    .header-area-text {
+        padding-top: 5vh !important;
+    }
+
+    .header-area-img2 {
+       display: none;
+    }
+    .all-btn{
+        margin: -60px 5px;
+    }
+    .blog-area button{
+        float: left;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .my-team h2 {
+        font-size: 40px;
+        font-weight: 600px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .my-team h4 {
+        padding-top: 10px;
+        font-size: 25px;
+
+    }
+
+    .my-team p {
+        font-size: 15px;
+    }
+
+    .mem1 {
+        padding: 20px;
+    }
+
+    .mem1:hover {
+        padding: 20px;
+        box-shadow: 0 0 15px 5px #8888885b;
+    }
+
+    .mem1 a {
+        font-size: 18px;
+    }
+
+    .header-area-text {
+        padding-top: 35vh !important;
+    }
+    .header-area-img2 {
+        text-align: right;
+        padding-top: 15vh !important;
+    }
 }
